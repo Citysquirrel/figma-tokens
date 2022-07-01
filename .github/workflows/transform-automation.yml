@@ -4,7 +4,7 @@ on:
     - main
 jobs:
   my_job:
-    name: excute transfomer
+    name: excute transformer
     runs-on: ubuntu-18.04
     
     steps:
@@ -17,4 +17,9 @@ jobs:
         npm install
         npm run tf
         npm start
+        git config --global user.name "citysquirrel"
+        git config --global user.email "tok1324@naver.com"
+        git add -A
+        git commit -m "feat: auto transform"
+        git push
       
