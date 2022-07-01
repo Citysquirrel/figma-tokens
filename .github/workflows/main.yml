@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+    - main
+jobs:
+  my_job:
+    name: excute transfomer
+    runs-on: ubuntu-18.04
+    
+    steps:
+    - name: npm runs
+      run: |
+        npm install
+        npm run tf
+        npm start
+      
