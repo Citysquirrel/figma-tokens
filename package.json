@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "token-transformer": "^0.0.24"
+  },
+  "scripts": {
+    "tf": "token-transformer data/tokens.json data/output.json",
+    "start": "node transformer.js",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1"
+  }
+}
