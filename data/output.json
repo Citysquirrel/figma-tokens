@@ -179,9 +179,5 @@
   "Box": {
     "value": "1px",
     "type": "borderWidth"
-  },
-  "TEST": {
-    "value": "77px",
-    "type": "fontSizes"
   }
 }
