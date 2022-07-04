@@ -1,31 +1,38 @@
 const { typeConfig } = require('./transformer.config');
-
 const { readFile, writeFile } = require('fs').promises;
+
 (async () => {
   let tokens = await readFile('./data/output.json');
   const obj = JSON.parse(tokens.toString());
   const arr = Object.entries(obj);
   const result = {};
-  // option: 사용할 type을 설정해주는 배열
-  typeConfig.forEach((v) => {
-    result[v] = '';
+
+  // option: 사용할 type을 설정해주는 객체
+  const configKeys = Object.keys(typeConfig);
+  configKeys.forEach((v) => {
+    if (typeConfig[v]) result[v] = '';
   });
+
+  // 각 속성들을 CSS파일 형태로 변환해주는 코드
   arr.forEach((v, i) => {
-    // v[1].type => 타입
-    // v[1].value => 값
-    // v[0] => 변수명 => 가공 필요 (띄어쓰기 및 대문자)
-    // 타입별로 객체의 속성을 지정해서
-    // --변수명: 값; 요 형태로 정렬
     const type = v[1].type;
     const value = v[1].value;
-    let name = v[0].toLowerCase().replaceAll(' ', '-');
+    const name = v[0].toLowerCase().replaceAll(' ', '-'); //! replaceAll: node버전 최신화 요함
 
-    // result[type] === undefined
-    //   ? (result[type] = '')
-    if (result[type] !== undefined) result[type] += `--${name}:${value};`;
+    if (result[type] !== undefined) {
+      // 속성이 지금보다 훨씬 많아질 경우 switch문 사용을 고려
+      if (type === 'boxShadow') {
+        let boxShadow = '';
+        value.forEach((shadow) => {
+          boxShadow += `${shadow.x} ${shadow.y} ${shadow.blur} ${shadow.spread} ${shadow.color},`;
+        });
+        boxShadow = boxShadow.substring(0, boxShadow.length - 1) + ';';
+
+        result[type] += `--${name}:${boxShadow}`;
+        // 0px 9px 28px 8px rgba(0, 0, 0, 0.05), 0px 6px 16px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+      } else result[type] += `--${name}:${value};`;
+    }
   }); // => type을 기준으로 필터링 한 객체형태로 리턴
-
-  console.log(result);
 
   writeFile('./data/tranformed.json', JSON.stringify(result));
 })();

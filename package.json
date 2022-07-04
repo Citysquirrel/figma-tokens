@@ -5,9 +5,15 @@
   "scripts": {
     "tf": "token-transformer data/tokens.json data/output.json",
     "start": "node transformer.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "css": "node toCSS.js"
   },
   "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
     "husky": "^8.0.1"
   }
 }
