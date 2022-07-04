@@ -68,5 +68,20 @@ const { readFile, writeFile } = require('fs').promises;
   }
 
   const combineResult = { ...result, ...innerResult };
+
+  const css = objectToCss(combineResult);
+
   writeFile('./data/tranformed.json', JSON.stringify(combineResult));
+  writeFile('./data/output.css', css);
 })();
+
+function objectToCss(object) {
+  const keys = Object.keys(object);
+  let result = ':root {\n  ';
+  keys.forEach((v) => {
+    console.log(object[v]);
+    result += `/* ${v} */\n  ${object[v].replaceAll(';', ';\n  ')}`;
+  });
+  result += '}';
+  return result;
+}
