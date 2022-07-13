@@ -444,5 +444,244 @@
       }
     ],
     "type": "boxShadow"
+  },
+  "Black": {
+    "value": "#000000",
+    "type": "color"
+  },
+  "White": {
+    "value": "#ffffff",
+    "type": "color"
+  },
+  "fontFamilies": {
+    "spoqa-han-sans-neo": {
+      "value": "Spoqa Han Sans Neo",
+      "type": "fontFamilies"
+    }
+  },
+  "lineHeights": {
+    "0": {
+      "value": 15,
+      "type": "lineHeights"
+    },
+    "1": {
+      "value": 54,
+      "type": "lineHeights"
+    },
+    "2": {
+      "value": 48,
+      "type": "lineHeights"
+    },
+    "3": {
+      "value": 36,
+      "type": "lineHeights"
+    },
+    "4": {
+      "value": 30,
+      "type": "lineHeights"
+    },
+    "5": {
+      "value": 27,
+      "type": "lineHeights"
+    },
+    "6": {
+      "value": 24,
+      "type": "lineHeights"
+    },
+    "7": {
+      "value": 21,
+      "type": "lineHeights"
+    },
+    "8": {
+      "value": 18,
+      "type": "lineHeights"
+    }
+  },
+  "fontWeights": {
+    "spoqa-han-sans-neo-0": {
+      "value": "Regular",
+      "type": "fontWeights"
+    }
+  },
+  "fontSize": {
+    "0": {
+      "value": 10,
+      "type": "fontSizes"
+    },
+    "1": {
+      "value": 12,
+      "type": "fontSizes"
+    },
+    "2": {
+      "value": 14,
+      "type": "fontSizes"
+    },
+    "3": {
+      "value": 16,
+      "type": "fontSizes"
+    },
+    "4": {
+      "value": 18,
+      "type": "fontSizes"
+    },
+    "5": {
+      "value": 20,
+      "type": "fontSizes"
+    },
+    "6": {
+      "value": 24,
+      "type": "fontSizes"
+    },
+    "7": {
+      "value": 32,
+      "type": "fontSizes"
+    },
+    "8": {
+      "value": 36,
+      "type": "fontSizes"
+    }
+  },
+  "letterSpacing": {
+    "0": {
+      "value": 0,
+      "type": "letterSpacing"
+    }
+  },
+  "paragraphSpacing": {
+    "0": {
+      "value": 0,
+      "type": "paragraphSpacing"
+    }
+  },
+  "SEB CON Font Size": {
+    "T3": {
+      "value": {
+        "fontFamily": "Spoqa Han Sans Neo",
+        "fontWeight": "Regular",
+        "lineHeight": 15,
+        "fontSize": 10,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "H1": {
+      "value": {
+        "fontFamily": "Spoqa Han Sans Neo",
+        "fontWeight": "Regular",
+        "lineHeight": 54,
+        "fontSize": 36,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "H2": {
+      "value": {
+        "fontFamily": "Spoqa Han Sans Neo",
+        "fontWeight": "Regular",
+        "lineHeight": 48,
+        "fontSize": 32,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "H3": {
+      "value": {
+        "fontFamily": "Spoqa Han Sans Neo",
+        "fontWeight": "Regular",
+        "lineHeight": 36,
+        "fontSize": 24,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "H4": {
+      "value": {
+        "fontFamily": "Spoqa Han Sans Neo",
+        "fontWeight": "Regular",
+        "lineHeight": 30,
+        "fontSize": 20,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "H5": {
+      "value": {
+        "fontFamily": "Spoqa Han Sans Neo",
+        "fontWeight": "Regular",
+        "lineHeight": 27,
+        "fontSize": 18,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "Default": {
+      "value": {
+        "fontFamily": "Spoqa Han Sans Neo",
+        "fontWeight": "Regular",
+        "lineHeight": 24,
+        "fontSize": 16,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "T1": {
+      "value": {
+        "fontFamily": "Spoqa Han Sans Neo",
+        "fontWeight": "Regular",
+        "lineHeight": 21,
+        "fontSize": 14,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    },
+    "T2": {
+      "value": {
+        "fontFamily": "Spoqa Han Sans Neo",
+        "fontWeight": "Regular",
+        "lineHeight": 18,
+        "fontSize": 12,
+        "letterSpacing": 0,
+        "paragraphSpacing": 0,
+        "textCase": "none",
+        "textDecoration": "none"
+      },
+      "type": "typography"
+    }
+  },
+  "textCase": {
+    "none": {
+      "value": "none",
+      "type": "textCase"
+    }
+  },
+  "textDecoration": {
+    "none": {
+      "value": "none",
+      "type": "textDecoration"
+    }
   }
 }
