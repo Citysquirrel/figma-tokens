@@ -49,11 +49,18 @@ const { readFile, writeFile } = require('fs').promises;
     } else {
       if (result[type] !== undefined) {
         // 속성이 지금보다 훨씬 많아질 경우 switch문 사용을 고려
+        console.log('Test: ', value);
         if (type === 'boxShadow') {
           let boxShadow = '';
-          value.forEach((shadow) => {
-            boxShadow += `${shadow.x} ${shadow.y} ${shadow.blur} ${shadow.spread} ${shadow.color},`;
-          });
+          if (Array.isArray(value)) {
+            value.forEach((shadow) => {
+              boxShadow += `${shadow.x} ${shadow.y} ${shadow.blur} ${shadow.spread} ${shadow.color},`;
+            });
+          } else {
+            {
+              boxShadow += `${value.x} ${value.y} ${value.blur} ${value.spread} ${value.color},`;
+            }
+          }
           boxShadow = boxShadow.substring(0, boxShadow.length - 1) + ';';
 
           result[type] += `--${name}:${boxShadow}`;

@@ -416,35 +416,6 @@
     "value": "15px",
     "type": "lineHeights"
   },
-  "Dropdown": {
-    "value": [
-      {
-        "x": 0,
-        "y": "3px",
-        "blur": "6px",
-        "spread": "-4px",
-        "color": "#0000001f",
-        "type": "dropShadow"
-      },
-      {
-        "x": 0,
-        "y": "6px",
-        "blur": "16px",
-        "spread": 0,
-        "color": "#00000014",
-        "type": "dropShadow"
-      },
-      {
-        "x": 0,
-        "y": "9px",
-        "blur": "28px",
-        "spread": "8px",
-        "color": "#0000000d",
-        "type": "dropShadow"
-      }
-    ],
-    "type": "boxShadow"
-  },
   "Black": {
     "value": "#000000",
     "type": "color"
@@ -683,5 +654,56 @@
       "value": "none",
       "type": "textDecoration"
     }
+  },
+  "15px": {
+    "value": {
+      "color": "#00000026",
+      "type": "dropShadow",
+      "x": 0,
+      "y": 0,
+      "blur": 15,
+      "spread": 0
+    },
+    "type": "boxShadow"
+  },
+  "7px": {
+    "value": {
+      "color": "#00000040",
+      "type": "dropShadow",
+      "x": 0,
+      "y": 0,
+      "blur": 7,
+      "spread": 0
+    },
+    "type": "boxShadow"
+  },
+  "Big box": {
+    "value": [
+      {
+        "color": "#0000001f",
+        "type": "dropShadow",
+        "x": 0,
+        "y": 3,
+        "blur": 6,
+        "spread": -4
+      },
+      {
+        "color": "#00000014",
+        "type": "dropShadow",
+        "x": 0,
+        "y": 6,
+        "blur": 16,
+        "spread": 0
+      },
+      {
+        "color": "#0000000d",
+        "type": "dropShadow",
+        "x": 0,
+        "y": 9,
+        "blur": 28,
+        "spread": 8
+      }
+    ],
+    "type": "boxShadow"
   }
 }
