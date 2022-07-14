@@ -36,7 +36,7 @@ const { readFile, writeFile } = require('fs').promises;
           if (innerType === 'boxShadow') {
             let boxShadow = '';
             innerValue.forEach((shadow) => {
-              boxShadow += `${shadow.x} ${shadow.y} ${shadow.blur} ${shadow.spread} ${shadow.color},`;
+              boxShadow += `${shadow.x}px ${shadow.y}px ${shadow.blur}px ${shadow.spread}px ${shadow.color},`;
             });
             boxShadow = boxShadow.substring(0, boxShadow.length - 1) + ';';
 
@@ -54,11 +54,11 @@ const { readFile, writeFile } = require('fs').promises;
           let boxShadow = '';
           if (Array.isArray(value)) {
             value.forEach((shadow) => {
-              boxShadow += `${shadow.x} ${shadow.y} ${shadow.blur} ${shadow.spread} ${shadow.color},`;
+              boxShadow += `${shadow.x}px ${shadow.y}px ${shadow.blur}px ${shadow.spread}px ${shadow.color},`;
             });
           } else {
             {
-              boxShadow += `${value.x} ${value.y} ${value.blur} ${value.spread} ${value.color},`;
+              boxShadow += `${value.x}px ${value.y}px ${value.blur}px ${value.spread}px ${value.color},`;
             }
           }
           boxShadow = boxShadow.substring(0, boxShadow.length - 1) + ';';
