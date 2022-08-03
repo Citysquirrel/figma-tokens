@@ -9,3 +9,5 @@
 변경된 파일(data/transformed.json)을 객체화해서 css의 변수로 사용합니다.
 
 버전관리는 굳이 하지 않습니다. 이후 공용으로 사용하거나 이관하게 될 경우에만 따로 세팅할 것입니다.
+
+** 코드는 해당 [링크](https://github.com/Citysquirrel/citysquirrel.github.io/tree/dev/data)로 이사했습니다 :)**
