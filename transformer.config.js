@@ -5,5 +5,6 @@ module.exports = {
     lineHeights: false,
     boxShadow: true,
     borderWidth: false,
+    fontFamilies: true,
   },
 };
